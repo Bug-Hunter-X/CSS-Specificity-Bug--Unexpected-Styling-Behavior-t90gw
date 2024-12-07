@@ -1,0 +1,3 @@
+# CSS Specificity Bug
+
+This repository demonstrates a common CSS bug related to selector specificity.  The `bug.css` file contains CSS rules that lead to unexpected styling behavior due to the high specificity of the ID selector. The solution, found in `bugSolution.css`, addresses the issue by restructuring the CSS to achieve the intended styling using more specific selectors, or by using the !important flag, while acknowledging its limitations.
