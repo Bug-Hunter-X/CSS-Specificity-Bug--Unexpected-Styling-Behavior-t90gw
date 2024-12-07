@@ -1,0 +1,13 @@
+/* Solution: Improved selector specificity. We've used a more specific class to ensure the correct styles are applied.  If the color must be blue, then the !important flag is used to override the less specific rule.  It is generally recommended to solve specificity problems using better class structures rather than using the !important flag. */
+
+.myClass { 
+  color: red; 
+}
+
+#myElement.myClass { 
+  color: green; 
+}
+
+#myElement { 
+  color: blue !important; 
+}
