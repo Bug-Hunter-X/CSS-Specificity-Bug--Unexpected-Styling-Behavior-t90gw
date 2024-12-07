@@ -1,0 +1,12 @@
+/* This CSS causes unexpected behavior due to the specificity of selectors. The ID selector (#myElement) is highly specific and overrides the class selector (.myClass).  The second rule is completely ignored because of specificity. */
+#myElement { 
+  color: blue; 
+}
+
+.myClass { 
+  color: red; 
+}
+
+#myElement.myClass {  /* This selector is also ineffective, as the ID selector dominates */
+  color: green; 
+}
